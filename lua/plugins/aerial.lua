@@ -15,16 +15,20 @@ return {
         require("aerial").setup({
             -- Priority list of preferred backends for aerial.
             -- This can be a filetype map (see :help aerial-filetype-map)
-            backends = { "treesitter", "lsp", "markdown", "man", "qmd" },
+            backends = {
+                ["_"] = { "lsp", "treesitter" },
+                python = { "lsp", "treesitter" },
+                rust = { "lsp" },
+            },
 
             layout = {
                 -- These control the width of the aerial window.
                 -- They can be integers or a float between 0 and 1 (e.g. 0.4 for 40%)
                 -- min_width and max_width can be a list of mixed types.
                 -- max_width = {40, 0.2} means "the lesser of 40 columns or 20% of total"
-                max_width = { 40, 0.2 },
+                max_width = { 40, 0.3 },
                 width = nil,
-                min_width = 10,
+                min_width = 20,
 
                 -- key-value pairs of window-local options for aerial window (e.g. winhl)
                 win_opts = {},
@@ -112,14 +116,29 @@ return {
             -- This can be a filetype map (see :help aerial-filetype-map)
             -- To see all available values, see :help SymbolKind
             filter_kind = {
+                "Array",
+                "Boolean",
                 "Class",
                 "Constructor",
                 "Enum",
+                "EnumMember",
+                "Event",
+                "Field",
+                "File",
                 "Function",
                 "Interface",
-                "Module",
+                "Key",
                 "Method",
+                "Module",
+                "Namespace",
+                "Null",
+                "Number",
+                "Object",
+                "Operator",
+                "String",
                 "Struct",
+                "TypeParameter",
+                "Variable",
             },
 
             -- Determines line highlighting mode when multiple splits are visible.
