@@ -363,6 +363,7 @@ return {
         })
 
         -- You probably also want to set a keymap to toggle aerial
-        vim.keymap.set("n", "<leader>ar", "<cmd>AerialToggle!<CR>")
+        -- vim.keymap.set("n", "<leader>ar", "<cmd>AerialToggle!<CR>") -- the ! symbol means stay in current window
+        vim.keymap.set("n", "<leader>ar", "<cmd>AerialToggle<CR>")
     end,
 }
