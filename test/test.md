@@ -8,8 +8,8 @@ format:
 jupyter: python3
 ---
 
-# Section 1
-## Section 1.1
+# o: Section 1
+## o: Section 1.1
 ### Section 1.1.1
 
 
@@ -17,6 +17,7 @@ jupyter: python3
 #| label: fig-polar
 #| fig-cap: "A line plot on a polar axis"
 
+# TODO: import modules
 import numpy as np
 import matplotlib.pyplot as plt
 
