@@ -20,12 +20,13 @@ return {
             "vim-language-server",
             "yaml-language-server",
         },
-
         ui = {
             icons = {
-                package_installed = "✓",
+                -- package_installed = "✓",
+                -- package_pending = "➜",
+                package_installed = "",
                 package_pending = "➜",
-                package_uninstalled = "✗",
+                package_uninstalled = "",
             },
         },
     },
