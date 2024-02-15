@@ -52,7 +52,7 @@
   "quarto-nvim": { "branch": "main", "commit": "e70a207ede642ccb910540ee36480dcefb67ad6c" },
   "symbols-outline.nvim": { "branch": "master", "commit": "564ee65dfc9024bdde73a6621820866987cbb256" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "6c921ca12321edaa773e324ef64ea301a1d0da62" },
-  "telescope.nvim": { "branch": "master", "commit": "fac5da839e23e7a4c17a332a640541cd59ebfbd5" },
+  "telescope.nvim": { "branch": "master", "commit": "45d61cc8da213e4052cf698653692b6a4c961760" },
   "todo-comments.nvim": { "branch": "main", "commit": "833d8dd8b07eeda37a09e99460f72a02616935cb" },
   "toggleterm.nvim": { "branch": "main", "commit": "193786e0371e3286d3bc9aa0079da1cd41beaa62" },
   "tokyonight.nvim": { "branch": "main", "commit": "610179f7f12db3d08540b6cc61434db2eaecbcff" },
